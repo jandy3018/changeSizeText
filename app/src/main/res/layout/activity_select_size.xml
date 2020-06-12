@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
     android:background="#ffff"
+    android:fillViewport="true"
     android:scrollbarStyle="insideInset"
     android:scrollbars="vertical">
 
@@ -19,55 +19,64 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
             android:layout_gravity="top"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
             android:text="Selecciona una opción"
-            android:textAlignment="center"
-            android:textStyle="bold"/>
-        <RadioButton
-            android:id="@+id/rd_system"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:text="Del sistema"
-            android:checked="true"
-            android:textSize="12sp" />
-        <RadioButton
-            android:id="@+id/rd_small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:text="Pequeño"
-            android:textSize="12sp" />
+            android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/rd_normal"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:checked="false"
-            android:text="Normal"
-            android:textSize="12sp" />
+            android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/rd_big"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:text="Grande"
-            android:textSize="12sp" />
+            <RadioButton
+                android:id="@+id/rd_system"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="16dp"
+                android:checked="true"
+                android:text="Del sistema"
+                android:textSize="12sp" />
 
-        <Button
-            android:id="@+id/btn_applied"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:text="Aplicar"
-            android:textSize="14sp" />
+            <RadioButton
+                android:id="@+id/rd_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="16dp"
+                android:text="Pequeño"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rd_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="16dp"
+                android:checked="false"
+                android:text="Normal"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rd_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="16dp"
+                android:text="Grande"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_applied"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="16dp"
+                android:text="Aplicar"
+                android:textSize="14sp" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
