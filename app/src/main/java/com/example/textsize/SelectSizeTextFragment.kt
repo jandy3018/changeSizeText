@@ -29,7 +29,7 @@ class SelectSizeTextFragment : Fragment(){
 
             Utils.changeToSize(activity!!)
         }
-        val sizeUser = sharedPreferences.getString("SIZE_TEXT", "")
+        val sizeUser = sharedPreferences.getString("SIZE_TEXT", "NORMAL")
         rd_small.isChecked= sizeUser.equals("SMALL")
         rd_normal.isChecked= sizeUser.equals("NORMAL")
         rd_big.isChecked= sizeUser.equals("BIG")

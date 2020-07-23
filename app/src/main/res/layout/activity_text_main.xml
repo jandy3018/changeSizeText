@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
-            android:layout_marginTop="32dp"
+            android:layout_margin="16dp"
             android:text="I have been a fan of open source software for many years now. Not only do I use open source software, but I also develop a bit myself. A few years ago, a version control system by the name of Git wandered out from Linus Torvalds’ workshop. Its popularity boomed, especially when a little start-up known as GitHub sprang up. GitHub is a service that hosts Git projects for you, both public (that is, open source) and private. Over the years, however, it has also expanded to provide users with features such as code review, bug and feature ticketing, and a wiki system for hosted projects. If you have ever wanted to get involved with open source software, but were not quite sure on how to get started, GitHub is a great place to start."
             android:textSize="16sp"
             android:textStyle="bold"/>
